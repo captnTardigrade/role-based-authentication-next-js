@@ -1,4 +1,12 @@
-import { Alert, AlertIcon, CloseButton, useDisclosure } from "@chakra-ui/react";
+import {
+  Alert,
+  AlertIcon,
+  Box,
+  CloseButton,
+  Divider,
+  Textarea,
+  useDisclosure,
+} from "@chakra-ui/react";
 import { NextPage } from "next";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/router";
@@ -64,6 +72,21 @@ const Login: NextPage = () => {
       )}
       <Card className="container mx-auto max-w-max mt-[25vh] p-10">
         <form method="POST" onSubmit={loginHandler}>
+          <Box className="mb-3">
+            <Alert className="rounded-md" status="info">
+              <AlertIcon />
+              username SELLER
+              <br />
+              password seller
+            </Alert>
+            <Divider />
+            <Alert className="rounded-md" status="info">
+              <AlertIcon />
+              username BUYER
+              <br />
+              password buyer
+            </Alert>
+          </Box>
           <FormField
             ref={usernameRef}
             label="Username"
@@ -72,6 +95,7 @@ const Login: NextPage = () => {
             errorText="Username is required"
             type="text"
           />
+
           <FormField
             ref={passwordRef}
             label="Password"
