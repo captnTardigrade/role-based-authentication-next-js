@@ -34,12 +34,10 @@ export default NextAuth({
       credentials: {
         username: { label: "Username", type: "text", placeholder: "jsmith" },
         password: { label: "Password", type: "password" },
-        role: {
-          label: "Role",
-        },
+        role: { label: "Role" },
       },
       async authorize(credentials, _req) {
-        const loginType = credentials?.role as string;
+        const loginType = credentials?.role;
         const username = credentials?.username;
         const password = credentials?.password;
 

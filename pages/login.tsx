@@ -4,7 +4,6 @@ import {
   Box,
   CloseButton,
   Divider,
-  Textarea,
   useDisclosure,
 } from "@chakra-ui/react";
 import { NextPage } from "next";

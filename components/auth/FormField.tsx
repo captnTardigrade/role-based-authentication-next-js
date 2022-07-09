@@ -36,7 +36,7 @@ const FormField = forwardRef(
           onBlur={() => {
             setIsTouched(true);
           }}
-          className="ring-1 ring-primary-default"
+          className="ring-1 ring-indigo-500"
           id={id}
           type={type}
           value={input}

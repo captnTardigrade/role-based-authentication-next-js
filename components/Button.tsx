@@ -9,7 +9,7 @@ type ButtonProps = {
 const Button = forwardRef((props: ButtonProps, _ref) => {
   return (
     <button
-      className={`block shadow-lg rounded-md bg-primary-default px-8 py-3 uppercase text-white ${props.className}`}
+      className={`block shadow-lg rounded-md bg-indigo-500 px-8 py-3 uppercase text-white ${props.className}`}
       onClick={props.onClick}
     >
       {props.children}

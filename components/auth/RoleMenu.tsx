@@ -5,7 +5,7 @@ const RoleMenu = forwardRef((_, ref: ForwardedRef<HTMLSelectElement>) => {
   return (
     <FormControl>
       <FormLabel htmlFor="role">Role</FormLabel>
-      <Select className="ring-1 ring-primary-default" ref={ref} id="role">
+      <Select className="ring-1 ring-indigo-500" ref={ref} id="role">
         <option value="buyer">Buyer</option>
         <option value="seller">Seller</option>
       </Select>
